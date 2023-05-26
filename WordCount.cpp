@@ -68,13 +68,6 @@ int WordCount::incrWordCount(std::string word) {
 	return 1;
 }
 
-void  WordCount::print(){
-	for (size_t i = 0; i < CAPACITY; ++i) {
-        for (size_t j = 0; j < table[i].size(); ++j) {
-            cout<< table[i][j].first<<table[i][j].second <<endl;
-}
-}
-}
 int WordCount::decrWordCount(std::string word) {
 	word = makeValidWord(word);
 if(word ==""){
